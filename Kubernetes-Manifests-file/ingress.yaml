@@ -6,12 +6,12 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]' #If you can add port 443, if you want to have SSL certification for domain
     # alb.ingress.kubernetes.io/subnets: "subnet-0aa439b4ddafcca10,subnet-0b95df318219145ca,subnet-0ccca36474902829a"
 spec:
   ingressClassName: alb
   rules:
-    - host: sachinayeshmantha.live
+    - host: sachin-devops.com
       http:
         paths:
           - path: /api
